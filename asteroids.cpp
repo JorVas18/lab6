@@ -284,6 +284,7 @@ void check_mouse(XEvent *e);
 int check_keys(XEvent *e);
 void physics();
 void render();
+extern void showName(const char *name, int x, int y);
 
 //==========================================================================
 // M A I N
@@ -739,6 +740,7 @@ void render()
 	Rect r;
 	glClear(GL_COLOR_BUFFER_BIT);
 	//
+	showName("Jorge Vasquez", 200, 250);
 	r.bot = gl.yres - 20;
 	r.left = 10;
 	r.center = 0;
